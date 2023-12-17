@@ -2,38 +2,29 @@
 <html lang="en">
 
 <head>
-  <!-- Include Font Awesome file -->
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
 
-  <!-- Include Google Fonts file -->
   <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Ubuntu Mono" rel="stylesheet" />
 
-  <!-- Include Css File -->
 
   <link rel="stylesheet" href="/css/common.css" />
 
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 
-  <!-- Font Awesome Scripts -->
   <script src="https://kit.fontawesome.com/39565093f3.js" crossorigin="anonymous"></script>
 
-  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
-  <!-- Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>
 
-  <!-- Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <!-- Header Part -->
   <div>
     <section class="s1 custom-section">
       <div class="logo">
@@ -149,134 +140,127 @@
         </div>
       </div>
     </div>
-
-    <div class="post1">
-
-
-      <div class="ListOfPost container">
-        <div class="row featurette">
-
-          <div class="col-lg-6">
-            <div class="Post">
-              <div class="PostAuthorName">
-                <p class="postUsername">Jimi</p>
-              </div>
-              <div class="PostButton">
-                <span class="icons" data-toggle="modal" data-target="#DeleteModel"
-                  onclick="confirmDeletePost('post1')"><i class="fa fa-trash fa-lg" id="trashIcon"
-                    aria-hidden="true"></i>
-                </span>
-                <p class="postTitle">Post 1</p>
-                <p class="postDesccription">
-                  Since JavaScript does not have any type-checking, either of these keywords can be used to declare a
-                  variable of any type (datatype) in JavaScript.
-                </p>
-                <span class="icons" onclick="PostDetailPage()"><i class="fa fa-ellipsis-h fa-lg"
-                    id="postDetail"></i></span>
-              </div>
+    <div class="ListOfPost container post1">
+      <div class="row featurette">
+        <!--Post 1 starts-->
+        <div class="col-lg-6">
+          <div class="Post">
+            <div class="PostAuthorName">
+              <p class="postUsername">Aarti Kushwaha
+</p>
+            </div>
+            <div class="PostButton">
+              <span class="icons" data-toggle="modal" data-target="#DeleteModel"><i class="fa fa-trash fa-lg"
+                  id="trashIcon" aria-hidden="true" onclick="confirmDeletePost('post1')"></i>
+              </span>
+              <p class="postTitle">Post 1</p>
+              <p class="postDesccription">
+                Since JavaScript does not have any type-checking, either of these keywords can be used to declare a
+                variable of any type (datatype) in JavaScript.
+              </p>
+              <span class="icons" onclick="PostDetailPage()"><i class="fa fa-ellipsis-h fa-lg"
+                  id="postDetail"></i></span>
             </div>
           </div>
         </div>
+        <!--Post 1 ends-->
 
-        <div class="post2">
-          <div class="row featurette">
-
-            <div class="col-lg-6">
-              <div class="Post">
-                <div class="PostAuthorName">
-                  <p class="postUsername">Jimi</p>
-                </div>
-                <div class="PostButton">
-                  <span class="icons" data-toggle="modal" onclick="confirmDeletePost('post2')"
-                    data-target="#DeleteModel"><i class="fa fa-trash fa-lg" id="trashIcon"
-                      aria-hidden="true"></i></span>
-                  <p class="postTitle">Post 2</p>
-                  <p class="postDesccription">
-                    Since JavaScript does not have any type-checking, either of these keywords can be used to declare a
-                    variable of any type (datatype) in JavaScript.</p>
-                  <span class="icons" onclick="PostDetailPage()"><i class="fa fa-ellipsis-h fa-lg"
-                      id="postDetail"></i></span>
-                </div>
-              </div>
+        <!--Post 2 starts-->
+        <div class="col-lg-6 post2">
+          <div class="Post">
+            <div class="PostAuthorName">
+              <p class="postUsername">Michael Smith
+</p>
             </div>
-
+            <div class="PostButton">
+              <span class="icons" data-toggle="modal" data-target="#DeleteModel"><i class="fa fa-trash fa-lg"
+                  id="trashIcon" aria-hidden="true" onclick="confirmDeletePost('post2')"></i></span>
+              <p class="postTitle">Post 2</p>
+              <p class="postDesccription">
+                One of the biggest challenges in software development is time.
+                It’s something we can’t easily get more of, but linting can
+                help us make the most out of the time we have.
+              </p>
+              <span class="icons" onclick="PostDetailPage()"><i class="fa fa-ellipsis-h fa-lg"
+                  id="postDetail"></i></span>
+            </div>
           </div>
-
         </div>
+        <!--Post 2 ends-->
+      </div>
 
-        <div class="post3">
-          <div class="row featurette">
-            <!--Post 3 starts-->
-            <div class="col-lg-6">
-              <div class="Post">
-                <div class="PostAuthorName">
-                  <p class="postUsername">Jimi</p>
-                </div>
-                <div class="PostButton">
-                  <span class="icons" data-toggle="modal" data-target="#DeleteModel"
-                    onclick="confirmDeletePost('post3')"><i class="fa fa-trash fa-lg" id="trashIcon"
-                      aria-hidden="true"></i></span>
-                  <p class="postTitle">Post 3</p>
-                  <p class="postDesccription">
-                    If you're a developer with a Twitter account, you've already
-                    seen everyone and their cat start a blog, YouTube channel, or
-                    Patreon.
-                  </p>
-                  <span class="icons" onclick="PostDetailPage()"><i class="fa fa-ellipsis-h fa-lg"
-                      id="postDetail"></i></span>
-                </div>
-              </div>
+      <div class="row featurette">
+        <!--Post 3 starts-->
+        <div class="col-lg-6 post3">
+          <div class="Post">
+            <div class="PostAuthorName">
+              <p class="postUsername">Jessica Davis
+</p>
+            </div>
+            <div class="PostButton">
+              <span class="icons" data-toggle="modal" data-target="#DeleteModel"><i class="fa fa-trash fa-lg"
+                  id="trashIcon" aria-hidden="true" onclick="confirmDeletePost('post3')"></i></span>
+              <p class="postTitle">Post 3</p>
+              <p class="postDesccription">
+                If you're a developer with a Twitter account, you've already
+                seen everyone and their cat start a blog, YouTube channel, or
+                Patreon.
+              </p>
+              <span class="icons" onclick="PostDetailPage()"><i class="fa fa-ellipsis-h fa-lg"
+                  id="postDetail" ></i></span>
             </div>
           </div>
-          <div class="post4">
-            <div class="row featurette">
-              <div class="col-lg-6">
-                <div class="Post">
-                  <div class="PostAuthorName">
-                    <p class="postUsername">Jimi</p>
-                  </div>
-                  <div class="PostButton">
-                    <span class="icons" data-toggle="modal" data-target="#DeleteModel"
-                      onclick="confirmDeletePost('post4')"><i class="fa fa-trash fa-lg" id="trashIcon"
-                        aria-hidden="true"></i>
-                    </span>
-                    <p class="postTitle">Post 4</p>
-                    <p class="postDesccription">
-                      Since JavaScript does not have any type-checking, either of these keywords can be used to declare
-                      a
-                      variable of any type (datatype) in JavaScript.
-                    </p>
-                    <span class="icons" onclick="PostDetailPage()"><i class="fa fa-ellipsis-h fa-lg"
-                        id="postDetail"></i></span>
-                  </div>
-                </div>
-              </div>
-            </div>
+        </div>
+        <!--Post 3 ends-->
 
-            <div class="post5">
-              <div class="row featurette">
-                <div class="col-lg-6">
-                  <div class="Post">
-                    <div class="PostAuthorName">
-                      <p class="postUsername">Jimi</p>
-                    </div>
-                    <div class="PostButton">
-                      <span class="icons" data-toggle="modal" data-target="#DeleteModel"
-                        onclick="confirmDeletePost('post5')"><i class="fa fa-trash fa-lg" id="trashIcon"
-                          aria-hidden="true"></i>
-                      </span>
-                      <p class="postTitle">Post 5</p>
-                      <p class="postDesccription">
-                        Since JavaScript does not have any type-checking, either of these keywords can be used to
-                        declare a
-                        variable of any type (datatype) in JavaScript.
-                      </p>
-                      <span class="icons" onclick="PostDetailPage()"><i class="fa fa-ellipsis-h fa-lg"
-                          id="postDetail"></i></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <!--Post 4 starts-->
+        <div class="col-lg-6 post4">
+          <div class="Post">
+            <div class="PostAuthorName">
+              <p class="postUsername">Daniel Brown
+</p>
+            </div>
+            <div class="PostButton">
+              <span class="icons" data-toggle="modal" data-target="#DeleteModel" ><i class="fa fa-trash fa-lg"
+                  id="trashIcon" aria-hidden="true" onclick="confirmDeletePost('post4')"></i></span>
+              <p class="postTitle">Post 4</p>
+              <p class="postDesccription">
+                When code is not describable using words, most people have to
+                do some mental mapping to turn it in to words.
+              </p>
+              <span class="icons" onclick="PostDetailPage()"><i class="fa fa-ellipsis-h fa-lg"
+                  id="postDetail" ></i></span>
+            </div>
+          </div>
+        </div>
+        <!--Post 4 ends-->
+      </div>
+
+      <div class="row featurette">
+        <!--Post 5 starts-->
+        <div class="col-lg-12 post5">
+          <div class="Post ">
+            <div class="PostAuthorName">
+              <p class="postUsername">Prithvi Yewale
+</p>
+            </div>
+            <div class="PostButton">
+              <span class="icons" data-toggle="modal" data-target="#DeleteModel"><i class="fa fa-trash fa-lg del5"
+                  id="trashIcon" aria-hidden="true" onclick="confirmDeletePost('post5')"></i></span>
+              <p class="postTitle">Post 5</p>
+              <p class="postDesccription">
+                Since JavaScript does not have any type-checking, these
+                keywords be used
+              </p>
+              <span class="icons" onclick="PostDetailPage()"><i class="fa fa-ellipsis-h fa-lg"
+                  id="postDetail"></i></span>
+            </div>
+          </div>
+        </div>
+        <!--Post 5 ends-->
+      </div>
+    </div>
+    <!-- Post Section -->
 
 
 
@@ -298,7 +282,7 @@
 
                   $('#DeleteModel').modal('hide');
                 }
-                // file2.js
+            
 
               </script>
             </div>

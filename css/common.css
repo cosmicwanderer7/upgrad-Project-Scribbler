@@ -41,12 +41,12 @@ body {
   justify-content: center !important;
   flex-wrap: wrap !important;
   width: 70% !important;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .Post {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 35% 65%;
   background-color: white;
   max-height: 170px !important;
   box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2),
