@@ -1,0 +1,108 @@
+body {
+  background-image: url(/images/aurora_borealis.png);
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.custom-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.logo {
+  color: rgba(41, 136, 253, 0.659);
+  font-family: "Montez", cursive !important;
+  display: block !important;
+  font-size: 36px !important;
+  padding-left: 1.3rem !important;
+  padding-top: 0.8rem !important;
+}
+.subheading {
+  display: block !important;
+  font-size: 15px !important;
+  font-family: "Ubuntu", sans-serif !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.btn1 {
+  background-color: rgba(55, 104, 251, 0.655) !important ;
+  height: 50px !important;
+  width: 100px !important;
+  border-radius: 7px !important;
+  border: 1px white solid !important;
+  font-family: "Ubuntu", sans-serif !important;
+  color: white !important;
+  font-size: 20px !important;
+  margin-right: 0.5rem !important;
+  float: right !important;
+  margin-top: 0.5rem !important;
+}
+
+.ListOfPost {
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  width: 70% !important;
+  margin-top: 4rem;
+}
+
+.Post {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background-color: white;
+  max-height: 170px !important;
+  box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2),
+    0 4px 20px 0 rgba(79, 19, 97, 0.19);
+  margin: 20px;
+  border: 2px solid white;
+  border-radius: 7px;
+  height: 80% !important;
+  font-size: 12px;
+}
+
+.PostAuthorName {
+  font-size: 20px;
+  margin-top: 17%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.postTitle {
+  font-weight: 700;
+  font-size: 130%;
+  padding-bottom: none !important;
+}
+
+.PostButton {
+  width: 100%;
+  display: flex;
+  float: right;
+  background-color: #f0f0f0;
+  flex-direction: column;
+  padding: 30px;
+  border: 2px solid #f0f0f0;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  overflow: hidden;
+  height: 100%;
+}
+.postUsername {
+  font-weight: 500;
+}
+.postDesccription {
+  overflow: hidden;
+}
+
+.PostButton span i {
+  float: right;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.icons a {
+  text-decoration: none;
+}
+
+.icons:hover {
+  cursor: pointer;
+}

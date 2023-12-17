@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ffeedd;
+}
+
+.cardview {
+    display: flex;
+    margin: 5%;
+}
+
+.cardview .one {
+    background-color: white;
+    padding: 3%;
+}
+
+.cardview .two {
+    background-color: gray;
+    padding: 2%;
+}
+
+.allcardview {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.allcardview .cardview .two h4 span {
+    color: rgba(0, 0, 0, 0.534);
+}
+
+.allcardview .cardview .two p {
+    margin-top: 15px;
+    text-align: justify;
+}

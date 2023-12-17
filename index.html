@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/index.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu Mono" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/39565093f3.js" crossorigin="anonymous"></script>
+
+  <script src="js/index.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <section class="s1">
+    <div class="logo">
+      <h1>ScriBBler</h1>
+      <div class="subheading">Explore, Imagine, Create</div>
+    </div>
+
+    <div class="Signin">
+      <button class="btn" data-toggle="modal" data-target="#signinModal" data-backdrop='static'
+        data-keyboard='false'>Sign In</button>
+      <button class="btn" data-toggle="modal" data-target="#signupModal" data-backdrop='static'
+        data-keyboard='false'>Sign Up</button>
+    </div>
+  </section>
+
+
+
+
+  <section class="s2">
+    <div class="three">
+      <button style="
+            margin: 5px;
+            height: 50px;
+            width: 100px;
+            border-radius: 7px;
+            border: 1px white solid;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+      
+            color: black;
+            background-color: #f0ac4ec8;
+            border-color: #000000;
+            
+          " onmouseover="this.style.backgroundColor='#ff9500f6'; this.style.width='101.5px';" onclick="AllPost()">
+        All Post
+      </button>
+      <button class="postbtn" style="
+        margin: 5px;
+        height: 50px;
+        width: 130px;
+        border-radius: 7px;
+        border: 1px white solid;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+        color: black;
+        background-color: #f0ac4ec8;
+        border-color: #000000;" onmouseover="this.style.backgroundColor='#ff9500f6'; this.style.width='132.5px';"
+        data-toggle="modal" data-target="#createModal" data-backdrop='static' data-keyboard='false'>Create Post</button>
+    </div>
+    <div class="modal fade" id="createModal"style="font-family: Ubuntu; padding: 10rem;" role="dialog">
+      <div class="modal-dialog modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content modal-font">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h3 class="modal-title text-center" style="font-family: Ubuntu">Pen Your Post</h3>
+
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm"  class="holder" style="font-family: Ubuntu; font-size: 20px;
+              float: left;">Title:</span>
+              <input type="text" class="form-control" aria-label="Sizing example input" id="titlePost"
+                style="background-color: rgb(223, 215, 215);" aria-describedby="inputGroup-sizing-sm" />
+            </div>
+            <div style="margin-top: 10px; margin-bottom: 5px" class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm" class="holder" style="font-family: Ubuntu; font-size: 20px;
+              float: left;">Content:</span>
+
+              <div>
+                <textarea  id="contentPost" aria-label="Sizing example input"
+                  style="background-color: rgb(223, 215, 215);" aria-describedby="inputGroup-sizing-lg" rows="15"
+                  cols="67" name="comment" form="userform"></textarea>
+              </div>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <button type="button" class="btn1 btn-success" data-dismiss="modal"
+                style="background-color: #0ec038; color: white;">
+                Create
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="modal fade" id="signinModal" role="dialog" style="padding: 15rem;">
+      <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content modal-font">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h2 class="modal-title text-center modal-font">Welcome Back!</h2>
+            <hr>
+
+            <div class="modal-body">
+              <form style="margin: 15px;">
+                <div class="form-group " style="font-family: Ubuntu">
+                  <label for="exampleInputEmail1" class="holder">Username</label>
+                  <input type="text" class="form-control" id="exampleInputloginEmail1" required="true"
+                    style="background-color: rgb(223, 215, 215);" aria-describedby="emailHelp"
+                    placeholder="Enter Username">
+
+                </div>
+                <div class="form-group " style="font-family: Ubuntu">
+                  <label for="exampleInputPassword1" class="holder">Password</label>
+                  <input type="password" class="form-control" id="exampleInputloginPassword" required="true"
+                    style="background-color: rgb(223, 215, 215);font-family: Ubuntu" placeholder="Enter Password">
+                </div>
+
+                <button type="submit" class="btn1" style="background-color: #0ec038; color: white;">
+                  Sign In
+                </button>
+                <div>
+                  <h4 class="text-center" style="padding: 5px;font-family: Ubuntu">Not a
+                    member?
+                    <a> <span style="color: blue; cursor: pointer;" data-toggle="modal" data-target="#signupModal"
+                        data-backdrop='static' data-keyboard='false'>Sign Up</span></a>
+                  </h4>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="signupModal" role="dialog" style="padding: 10rem;">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-font">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h2 class="modal-title text-center" class="holder">Get Started</h2>
+            <hr>
+
+            <div class="modal-body">
+              <form style="margin: 12px;">
+                <div class="form-group">
+                  <label for="exampleInputEmail1" class="holder">Full Name</label>
+                  <input type="text" class="form-control" id="exampleInputName" required="true"
+                    style="background-color: rgb(223, 215, 215);" aria-describedby="emailHelp"
+                    placeholder="Enter Full Name">
+
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1" class="holder">Username</label>
+                  <input type="text" class="form-control" id="exampleInputEmail" required="true"
+                    style="background-color: rgb(223, 215, 215);" aria-describedby="emailHelp"
+                    placeholder="Enter Username">
+
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1" class="holder">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword" required="true"
+                    style="background-color: rgb(223, 215, 215);" placeholder="Enter Password">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1" class="holder">Confirm Password</label>
+                  <input type="password" class="form-control" id="exampleInputcPassword" required="true"
+                    style="background-color: rgb(223, 215, 215);" placeholder="Confirm Password">
+                </div>
+
+                <button type="submit" class="btn1" required="true" style="background-color: #0ec038; color: white;">
+                  Sign Up
+                </button>
+
+
+              </form>
+
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+</body>
+
+</html>
