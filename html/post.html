@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
 </head>
 
 <body>
@@ -142,36 +143,53 @@
           </div>
    
         <div id="postSection">
-            <h1 id="titletext">The legacy of Jimi Hendrix</h1>
+            <h1 id="titletext">GitHub Repository Initialization Script</h1>
             <div style="display: block;height: 70px;"> <span>
-                    <p id="name" style="float: left;font-family: Satisfy;font-size: 28px;">Jimi</p>
+                    <p id="name" style="float: left;font-family: Satisfy;font-size: 28px;">Prithvi Yewale</p>
                     <button type="button" class="btn btn-danger" id="edit" onclick="postEdit()"
                         style="float: right;">Edit <i class="fa fa-edit"></i></button>
                 </span></div>
             <br />
             <div>
 
-                <p id="paraText">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1]
-                    Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever
-                    ventured before. His boundless drive, technical ability and creative application of such effects as
-                    distortion forever transformed the sound of rock and roll. While creating his unique musical voice
-                    and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock,
-                    American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored over driven
-                    amplifiers with high volume and gain.[119] He was instrumental in developing the previously
-                    undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah
-                    pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most
-                    guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this
-                    technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of
-                    chords while also playing melody. This method has been described as piano style, with the thumb
-                    playing what a pianist's left hand would play and the other fingers playing melody as a right
-                    hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords
-                    and lead lines together, giving the audio impression that more than one guitarist was
-                    performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock
-                    music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of
-                    the instrument as an electronic sound source. Players before him had experimented with feedback and
-                    distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every
-                    bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there
-                    are but two eras � before Hendrix and after Hendrix."
+                <p id="paraText">GitHub Repository Initialization Script
+                  This Bash script automates the process of creating a new GitHub repository, initializing it with a README file, and pushing the initial commit to the remote repository. The script prompts the user for a repository name and utilizes the GitHub API to create a new public repository.
+                  
+                  Prerequisites
+                  Before using this script, make sure you have the following:
+                  
+                  GitHub account
+                  GitHub username
+                  GitHub personal access token with repo scope
+                  Instructions
+                  Set your GitHub username and personal access token:
+                  # GitHub username 
+                  GITHUB_USERNAME="YourGitHubUsername"
+                  
+                  # GitHub personal access token
+                  GITHUB_TOKEN="YourGitHubPersonalAccessToken"
+                  Navigate to the desired directory where you want to create the new repository:
+                  cd /path/to/your/Documents
+                  Run the script:
+                  ./script_name.sh
+                  Enter the desired repository name when prompted.
+                  
+                  The script will create a new directory with the given repository name, initialize a Git repository, create an initial commit with a README file, and push it to the newly created GitHub repository.
+                  
+                  Script Explanation
+                  git init -b main: Initializes a new Git repository with the main branch.
+                  
+                  curl -u "$GITHUB_USERNAME:$GITHUB_TOKEN" https://api.github.com/user/repos -d '{"name":"'"$REPO_NAME"'", "private": false}': Uses the GitHub API to create a new public repository with the specified name.
+                  
+                  git remote add origin "git@github.com:$GITHUB_USERNAME/$REPO_NAME.git": Sets the remote repository URL.
+                  
+                  git branch -M main: Renames the default branch to main.
+                  
+                  git push -u origin main: Pushes the initial commit to the remote repository.
+                  
+                  code .: Opens the repository in Visual Studio Code (you may need to have it installed).
+                  
+                  Feel free to fork this repository, make any changes, and suggest improvements. Your contributions are welcome!
                 </p>
             </div>
             <div class="likeCommentSection">
